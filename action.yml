@@ -1,5 +1,12 @@
 name: 'Run Volttron Tests'
 description: 'Runs tests suite using Pytest'
+inputs:
+  os:
+    description: os type
+    required: yes
+  python_version: 
+    description: python version
+    required: yes
 runs:
   using: "composite"
   steps:
